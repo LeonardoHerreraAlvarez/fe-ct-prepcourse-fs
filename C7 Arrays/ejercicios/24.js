@@ -5,6 +5,19 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+
+  const resultado = [];
+  
+  // Bucle para iterar hasta 10 veces.
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+      continue; // Omite la iteración cuando i es 5.
+    }
+    num += 2; // Aumenta num en 2.
+    resultado.push(num); // Guarda el valor en el arreglo.
+  }
+  
+  return resultado; // Retorna el arreglo con los valores generados.
 }
 
 module.exports = continueStatement;
