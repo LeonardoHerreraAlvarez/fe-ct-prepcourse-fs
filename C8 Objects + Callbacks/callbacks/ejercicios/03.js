@@ -5,10 +5,8 @@ function operacionMatematica(num1, num2, cb) {
   // Tu código:
 
   if (typeof cb === 'function') {
-    // Retornar el resultado del callback pasándole num1 y num2 como argumentos
     return cb(num1, num2);
   } else {
-    // Si no se proporciona un callback, retornar null
     return null;
   }
 
